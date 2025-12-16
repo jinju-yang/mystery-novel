@@ -1,0 +1,192 @@
+.evidence-table-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.evidence-table-container h2 {
+  margin: 0 0 20px 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+.add-clue-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-clue-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.add-clue-section input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.btn-add-clue {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-add-clue:hover {
+  background-color: #229954;
+}
+
+.empty-clues {
+  padding: 40px 20px;
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.evidence-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.evidence-table thead tr:first-child th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  border: 1px solid #34495e;
+}
+
+.evidence-table thead tr:nth-child(2) th {
+  background-color: #34495e;
+  color: white;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #2c3e50;
+}
+
+.suspect-col {
+  min-width: 120px;
+  position: sticky;
+  left: 0;
+  z-index: 10;
+}
+
+.clue-col {
+  min-width: 200px;
+  text-align: center;
+}
+
+.clue-header-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.clue-title {
+  flex: 1;
+}
+
+.btn-delete-clue-small {
+  padding: 2px 6px;
+  background-color: rgba(231, 76, 60, 0.8);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-delete-clue-small:hover {
+  background-color: #e74c3c;
+}
+
+.sub-col {
+  min-width: 80px;
+  text-align: center;
+}
+
+.clue-table th.suspect-col {
+  min-width: 100px;
+}
+
+.clue-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+.evidence-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.suspect-row {
+  height: 50px;
+}
+
+.suspect-name {
+  padding: 12px;
+  color: #2c3e50;
+  font-weight: 600;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  position: sticky;
+  left: 0;
+  z-index: 5;
+}
+
+.status-cell {
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+  border: 1px solid #e0e0e0;
+}
+
+.status-cell.clickable:hover {
+  opacity: 0.8;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: white;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .evidence-table {
+    font-size: 12px;
+  }
+
+  .evidence-table th,
+  .evidence-table td {
+    padding: 8px;
+  }
+}
